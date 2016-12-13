@@ -4,77 +4,76 @@
     <meta charset="UTF-8">
     <title>Pizza</title>
 
-    <!-- Bootsrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-    <!-- LESS основний файл -->
-    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less" />
-    <!-- LESS JavaScript компілятор -->
+    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
 
 
 </head>
 <body>
-<div id="cart"></div>
-<div class="container">
-    <div class="row" id="pizza_list">
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail pizza-card">
-                <img src="assets/images/pizza_1.jpg">
 
-                <div class="caption"><h3>Thumbnail label</h3>
+<div id="header" class="navbar navbar-inverse">
+    <div id="logo">PIZZA KMA</div>
+    <div id="info" class="top-row col-sm-6 col-md-8  col-lg-9">
+        <div id="phone"
+             class=" visible-xs-inline-block visible-sm-inline-block visible-lg-inline-block visible-md-inline-block">
+            (044) 123 45 67
+        </div>
+        <div id="247" class="visible-lg-inline-block visible-md-inline-block ">24 години/7 днів на тиждень</div>
+        <button id="log-in" style="background-color: orange; border: none"class="btn btn-danger btn-sm">Увійти</button>
+    </div>
+</div>
 
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-                    <p>
-                        <a href="#" class="btn btn-primary">Button 2</a>
-                        <a href="#" class="btn btn-default">Button 1</a>
-                    </p>
-                </div>
+<div class="container-fluid main-page">
+    <div class="row">
+        <div class="main-pizzas">
+                <h2 class="chose-kind-of-pizza">Усі піци
+                    <span class="badge badge-all">8</span></h2>
+            <div class="filters">
+                <ul class="nav nav-pills">
+                    <li id="all" class="active"><a href="#">Усі</a></li>
+                    <li id="meat"><a href="#">М'ясні</a></li>
+                    <li id="pineapple"><a href="#">З ананасами</a></li>
+                    <li id="mushroom"><a href="#">З грибами</a></li>
+                    <li id="ocean"><a href="#">З морепродуктами</a></li>
+                    <li id="vega"><a href="#">Вегетаріанська</a></li>
+                </ul>
+            </div>
+            <div class="row" id="pizza_list">
             </div>
         </div>
+        <div id="order">
+            <div class="order-header">
+                <span class="order-title-header">Замовлення</span>
+                <span class="badge order-amount">0</span>
+                <button id="order-reset" class="btn btn-link">Очистити замовлення</button>
+            </div>
+            <div id="basket">
+                <div class="empty-cart">
 
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail pizza-card">
-                <img src="assets/images/pizza_2.jpg">
-
-                <div class="caption"><h3>Thumbnail label</h3>
-
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-                    <p>
-                        <a href="#" class="btn btn-primary">Button 3</a>
-                        <a href="#" class="btn btn-default">Button 4</a>
-                    </p>
+                    <br>Зголодніли?<br>Замовляйте піццу!
                 </div>
             </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail pizza-card">
-                <img src="assets/images/pizza_3.jpg">
-
-                <div class="caption"><h3>Thumbnail label</h3>
-
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-                    <p>
-                        <a href="#" class="btn btn-primary">Button 5</a>
-                        <a href="#" class="btn btn-default">Button 6</a>
-                    </p>
+            <div class="bottom-order">
+                <div class="order-cost">
+                    Сума замовлення
+                    <span class="money">0</span>
+                    грн.
                 </div>
+                <button class="btn btn-danger btn-lg btn-block to-buy">Замовити</button>
             </div>
         </div>
     </div>
 </div>
+<footer class="footer">
+    <div class="discount-before">
+    </div>
+    <p>ЦЬОГО ТИЖНЯ НА ВСE -20%</p>
+</footer>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-<!-- jQuery JavaScript -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
-
-<!--Bootsrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-<!--Own JavaScript -->
-<!--<script type="text/javascript"  src="assets/js/main.js"> </script>-->
+<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
